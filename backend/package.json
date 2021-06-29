@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node server.ts",
+    "dev": "nodemon --exec ts-node server.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^12.20.15",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.25.1",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.2.34"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
