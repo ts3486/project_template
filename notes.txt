@@ -1,0 +1,35 @@
+Project goal: 
+
+1. Music matching website/app where music-lovers can meetup and jam with each other.
+
+- navbar
+-  CRUD
+- Account Registration
+
+
+Tinder Architecture: 
+
+1. Store Profiles (Images)
+2. Recommend Matches (# of active users)
+3. Note Matches (0.1% matching rate)
+4. Direct Messaging
+
+
+Image Storing:
+
+File vs Blob (binary large object);
+
+Things to consider:
+1. Mutability
+2. Transaction Properties
+3. Indexes
+4. Access Control
+
+File:
+-Cheaper
+-Built for storing 
+-Faster
+
+
+
+What kind of backend would i need? 
