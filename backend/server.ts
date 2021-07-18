@@ -3,11 +3,10 @@ import { ApolloServer } from 'apollo-server-express';
 import { createConnection } from "typeorm";
 
 // import { buildSchema, NonEmptyArray } from 'type-graphql'; //allows schemas to be build with tsc classes and decorators. 
-//Resolvers
-import { resolvers } from "./resolvers/resolvers";
-//Types
-import { typeDefs } from "./typeDefs/typeDefs";
-import { Request, Response } from 'express';
+
+//Schema
+import { Schema } from "./schema";
+
 //Account
 import cookieParser from "cookie-parser";
 import { verify } from "jsonwebtoken";
@@ -28,8 +27,7 @@ import { User } from './entities/User';
     await createConnection();
 
     const apolloServer = new ApolloServer({
-        typeDefs, 
-        resolvers,
+        schema: Schema,
         context: ({ req, res }: any) => ({ req, res })
     }); 
 

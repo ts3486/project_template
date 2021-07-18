@@ -7,7 +7,7 @@
     "database": "project", 
 
     "synchronize": true,
-    "logging": true,
+    "logging": false,
     "entities": ["entities/**/*.ts"],
     "migrations": ["migration/**/*.ts"],
     "subscribers": ["subscriber/**/*.ts"],

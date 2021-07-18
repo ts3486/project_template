@@ -8,7 +8,7 @@ import { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } from "../constants";
 import { createTokens } from "./auth";
 
 
-export const resolvers: IResolvers = {
+export const authResolver: IResolvers = {
   Query: {
     me: (_, __, { req }) => {
       if (!req.userId) {
